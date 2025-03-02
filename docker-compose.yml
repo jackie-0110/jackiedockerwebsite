@@ -1,0 +1,21 @@
+
+services:
+  astro:
+    build: .
+    container_name: astro-app
+    restart: always
+    ports:
+      - "3000:3000"
+    networks:
+      - astro-network
+    volumes:
+      - /etc/ssl/private:/app/certs:ro
+      - /etc/ssl/private/cloudflare_origin.key:/etc/ssl/private/cloudflare_origin.key
+      - /etc/ssl/private/cloudflare_origin.pem:/etc/ssl/private/cloudflare_origin.pem
+      - /etc/ssl/private:/etc/ssl/private
+    environment:
+      - SSL_KEY_PATH=/etc/ssl/private/cloudflare_origin.key
+      - SSL_CERT_PATH=/etc/ssl/private/cloudflare_origin.pem
+networks:
+  astro-network:
+    driver: bridge

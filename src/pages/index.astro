@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🧑‍🚀 Hello ! </h1>
+			<p>
+			Welcome to my website! This serves as a homepage for my personal access to my servers, and I detail my home server setup and projects in my journey through high school and college throughout time.
+                	</p>
+			<h2> Personal Services </h2>
+                        <p>
+                        <a href="http://jupyter.jackie-courtney.com">Remote Jupyter Lab Instance</a>
+                        <br>
+                        <a href="http://portainer.jackie-courtney.com">Portainer Docker Image Manager </a>
+                        <br>
+                        <a href="http://photos.jackie-courtney.com">Family Photo Storage</a> (Click here Mom and Dad!)
+                        </p>
+		</main>
+		<Footer />
+	</body>
+</html>

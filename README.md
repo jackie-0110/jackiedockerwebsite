@@ -6,7 +6,7 @@
 
 > 🧑‍🚀 **Seasoned astronaut...** 
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+![Diagram]([https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d](https://github.com/jackie-0110/jackiedockerwebsite/blob/main/src/Websitediagram.svg))
 
 Features:
 
